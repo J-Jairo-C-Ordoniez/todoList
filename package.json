@@ -1,5 +1,5 @@
 {
-  "name": "proyecto_node",
+  "name": "proyect_node",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
@@ -13,7 +13,6 @@
   ],
   "author": "J Jairo C Ordoñez <cordobnaojhonjairo21@gmail.com>",
   "license": "MIT",
-  "description": "App para automatizar el agendamiento de tareas",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
