@@ -1,0 +1,28 @@
+{
+  "name": "proyecto_node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "play",
+    "work"
+  ],
+  "author": "J Jairo C Ordoñez <cordobnaojhonjairo21@gmail.com>",
+  "license": "MIT",
+  "description": "App para automatizar el agendamiento de tareas",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.3",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/morgan": "^1.9.9"
+  }
+}

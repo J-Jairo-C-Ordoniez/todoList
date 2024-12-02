@@ -1,0 +1,11 @@
+extends layaut 
+
+block content 
+    h1= title 
+    a(href="/").volver ◀️
+    form(action="/add" method="POST") 
+        label(for="title") Nombre Tarea
+        br
+        input(type="text" autofocus id="title" name="title") 
+        br
+        button(type="submit") Agregar 

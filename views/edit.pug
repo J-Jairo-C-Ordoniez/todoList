@@ -1,0 +1,10 @@
+extends layaut 
+
+block content
+    h1= title 
+    a(href="/").volver ◀️
+    form(action=`/edit/${task.id}` method="POST" target="_blank") 
+        label(for="title") Nuevo Nombre
+        input(type="text" autofocus id="title" name="name" value=`${task.title}`) 
+        button(type="submit").editar Editar
+    

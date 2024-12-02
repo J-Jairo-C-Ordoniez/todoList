@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 4vh 10vh 2vh;
+    background-color: #090909;
+    color: #aaa;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 10vh;
+    font-weight: bold;
+    text-align: center;
+    color: #090909;
+    animation: title 2s infinite ease-in-out;
+    text-shadow: .4vh 0 .1vh blueviolet;
+}
+
+a.agregarTarea {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2vh 4vh;
+    margin: 4vh 0;
+    background: linear-gradient(blueviolet, rgb(20, 0, 32));
+    border-radius: 1vh;
+    color: #aaa;
+}
+
+a.agregarTarea:hover {
+    color: #fff;
+    animation: hoverButton 3s infinite ease-in-out;
+}
+
+section {
+    margin: 1vh auto 2vh;
+    background-color: #888;
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 45%;
+    align-items: center;
+    color: #121212;
+    border-radius: 1vh;
+    align-content: center;
+}
+
+section:hover {
+    background-color: #aaa;
+}
+
+p {
+    justify-self: end;
+}
+
+a.nameTask {
+    color: #121212;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+a.completeNameTask {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+section.completeTask {
+    background-color: #444;
+    color: #aaa;
+    opacity: .5;
+}
+
+section.completeTask:hover {
+    background-color: #222;
+}
+
+a.btnComplete, a.btnDelete{
+    text-decoration: none;
+    color: #121212;
+    background-color: #666;
+    width: 16vh;
+    text-align: center;
+    padding: .5vh 2vh;
+    border-radius: 1vh;
+}
+
+a.btnDelete{
+    background-color: #333;
+}
+
+a.complete, a.delete{
+    color: #f5f5f5;
+    background-color: #3c3c3c;
+}
+
+a.delete{
+    background-color: #1f1f1f;
+}
+
+
+form {
+    margin: auto;
+    padding: 2vh 4vh;
+    width: 60vh;
+    background-color: #121212;
+    border-radius: 1vh;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    margin: 1vh auto 2vh;
+    padding: 1vh 2vh;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    color: #666;
+}
+
+button{
+    display: inline-block;
+    padding: 1vh 2vh;
+    outline: none;
+    background-color: #000;
+    border: none;
+    border-radius: .6vh;
+    color: #333;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+button:hover{
+    color: #888;
+}
+
+a.volver{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vh;
+}
+
+h2.error{
+    font-size: 40vh;
+    text-align: center;
+}
+
+p.errorP{
+    font-size: 4vh;
+    text-align: center;
+}
+
+a.errorA{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+
+@keyframes hoverButton {
+    0% {
+        background: linear-gradient(blueviolet, #090909);
+        box-shadow:  0 0  2vh .1vh blueviolet;
+    }
+
+    50% {
+        background: linear-gradient(cyan, #090909);
+        box-shadow:  0 0  5vh .1vh cyan;
+    }
+
+    100% {
+        background: linear-gradient(blueviolet, #090909);
+        box-shadow:  0 0  2vh .1vh blueviolet;
+    }
+}
+
+@keyframes title {
+    0% {
+        text-shadow: .4vh 0 .1vh blueviolet;
+    }
+
+    30% {
+        text-shadow: .4vh 0 .1vh green;
+    }
+
+    60% {
+        text-shadow: .4vh 0 .1vh rgb(119, 43, 226);
+    }
+
+    100% {
+        text-shadow: .4vh 0 .1vh blueviolet;
+    }
+}

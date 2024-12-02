@@ -1,0 +1,23 @@
+extends layaut 
+
+block content 
+    h1= title 
+    a(href="/add").agregarTarea Agregar Tarea
+    if tasks.length === 0
+        article 
+            h2 No hay tareas :)
+    else 
+        article 
+            for task in tasks 
+                if task.completed === 0
+                    section 
+                        a(href=`/edit/${task.id}`).nameTask= task.title
+                        a(href=`/complete/${task.id}`).btnComplete Completar 
+                        a(href=`/delete/${task.id}`).btnDelete Eliminar
+                        p ✖️ 
+                else 
+                    section.completeTask
+                        a(href=`/edit/${task.id}`).nameTask.completeNameTask= task.title 
+                        a(href=`/uncomplete/${task.id}`).complete.btnComplete Desmarcar
+                        a(href=`/delete/${task.id}`).delete.btnDelete Eliminar 
+                        p ✅
